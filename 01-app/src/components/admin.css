@@ -1,0 +1,66 @@
+/* Admin Dashboard Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.menu-section {
+    background-color: #007bff;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    padding: 10px;
+    background-color: #333;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu-list li:hover {
+    background-color: #007bff;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content h1 {
+    color: #007bff;
+}
