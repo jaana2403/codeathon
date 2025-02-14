@@ -1,3 +1,5 @@
+# Overview 
+The task 1 and 2 provides a structured approach to developing a Flask-based backend application. It begins with setting up the project by integrating Flask, configuring CORS, and establishing MySQL as the primary database. Database initialization ensures that required tables are created and managed effectively. The authentication system is built using JWT tokens, with password hashing and user role validation to enhance security. Role-based access control ensures that only authorized users can perform specific actions within the system. CRUD operations allow efficient management of entities like organizations, business units, and subfunctions. Security measures such as token validation and input sanitization prevent unauthorized access. CORS is configured to support multiple frontend applications while enforcing security policies. Error handling and logging provide structured responses and help in debugging issues. Testing and debugging processes ensure API reliability, while deployment considerations focus on securing sensitive configurations, enabling HTTPS, and using a production-ready server setup.
 
 # Task 2
 ## 1. *Project Setup*
@@ -98,6 +100,9 @@ Employees are classified into three categories based on their working hours:
 ## References
 This analysis is supported by visual references from attached images and case studies on employee work-hour trends.
 ![WhatsApp Image 2025-02-14 at 20 56 24_211b5baf](https://github.com/user-attachments/assets/4b4bfa27-c1d8-45c1-89c8-cd824c4fe38d)
+![WhatsApp Image 2025-02-14 at 20 56 24_7224708a](https://github.com/user-attachments/assets/cb34f8dd-9c73-4e82-bb05-546a6f299c81)
+![WhatsApp Image 2025-02-14 at 20 56 25_73638064](https://github.com/user-attachments/assets/2350ca40-27f1-42a0-9517-64558ac636f3)
+![WhatsApp Image 2025-02-14 at 20 56 25_2fa2aba9](https://github.com/user-attachments/assets/8a1c86d6-0ea4-4756-9370-d8e2002dc5f3)
 
 ---
 For any questions or contributions, please reach out to the project team.
