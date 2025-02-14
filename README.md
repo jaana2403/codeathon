@@ -1,5 +1,13 @@
 # Overview 
 The task 1 and 2 provides a structured approach to developing a Flask-based backend application. It begins with setting up the project by integrating Flask, configuring CORS, and establishing MySQL as the primary database. Database initialization ensures that required tables are created and managed effectively. The authentication system is built using JWT tokens, with password hashing and user role validation to enhance security. Role-based access control ensures that only authorized users can perform specific actions within the system. CRUD operations allow efficient management of entities like organizations, business units, and subfunctions. Security measures such as token validation and input sanitization prevent unauthorized access. CORS is configured to support multiple frontend applications while enforcing security policies. Error handling and logging provide structured responses and help in debugging issues. Testing and debugging processes ensure API reliability, while deployment considerations focus on securing sensitive configurations, enabling HTTPS, and using a production-ready server setup.
+# Task 1-Built a login with given functionality
+- Frontend: Built with React, using state management via hooks and navigation with React Router.
+- Backend: Flask API for authentication, handling login and registration requests.
+- Authentication: Secure credential validation with token-based authentication.
+- Role-Based Access: Redirects users based on their position (Admin, Manager, Employee, CEO).
+- Error Handling: Displays relevant messages for failed login or registration attempts.
+- Security: Ensures proper credential handling and secure API communication.
+
 
 # Task 2
 ## 1. *Project Setup*
@@ -62,6 +70,7 @@ The task 1 and 2 provides a structured approach to developing a Flask-based back
 - Use environment variables for sensitive configurations (e.g., database credentials, JWT secret key).
 - Deploy using a WSGI server such as *Gunicorn* for production.
 - Implement HTTPS and secure headers for enhanced security.
+
 
 # Task 3-Impact Assessment of Employee Working Hours
 
