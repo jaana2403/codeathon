@@ -97,6 +97,7 @@ Employees are classified into three categories based on their working hours:
 
 ## References
 This analysis is supported by visual references from attached images and case studies on employee work-hour trends.
+![WhatsApp Image 2025-02-14 at 20 56 24_211b5baf](https://github.com/user-attachments/assets/4b4bfa27-c1d8-45c1-89c8-cd824c4fe38d)
 
 ---
 For any questions or contributions, please reach out to the project team.
