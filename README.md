@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Overview
+This methodology provides a structured approach to developing a Flask-based backend application. It begins with setting up the project by integrating Flask, configuring CORS, and establishing MySQL as the primary database. Database initialization ensures that required tables are created and managed effectively. The authentication system is built using JWT tokens, with password hashing and user role validation to enhance security. Role-based access control ensures that only authorized users can perform specific actions within the system. CRUD operations allow efficient management of entities like organizations, business units, and subfunctions. Security measures such as token validation and input sanitization prevent unauthorized access. CORS is configured to support multiple frontend applications while enforcing security policies. Error handling and logging provide structured responses and help in debugging issues. Testing and debugging processes ensure API reliability, while deployment considerations focus on securing sensitive configurations, enabling HTTPS, and using a production-ready server setup.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Task 1 and 2
+### 1. *Project Setup*
+- Utilize Flask as the backend framework.
+- Enable CORS for cross-origin requests.
+- Configure the secret key for JWT authentication.
+- Establish MySQL as the primary relational database.
+- Set up MongoDB and GridFS for file storage (if required).
+- Import necessary libraries for security, authentication, and machine learning.
 
-In the project directory, you can run:
+### 2. *Database Initialization*
+- Configure MySQL connection settings.
+- Establish a connection to the database and handle errors appropriately.
+- Initialize required tables, including users and other entity-related tables.
+- Close connections after operations to prevent leaks.
 
-### `npm start`
+### 3. *Authentication System*
+- Implement *JWT-based authentication* with token expiration.
+- Use password hashing for security.
+- Create token_required decorator to enforce authentication in protected routes.
+- Develop user registration and login endpoints.
+- Implement password reset functionality with JWT-based reset tokens.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 4. *Role-Based Access Control*
+- Define different user roles (Admin, Manager, Employee, CEO).
+- Enforce role-based access control within the API endpoints.
+- Validate user permissions before allowing data access/modifications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 5. *CRUD Operations for Entities*
+- Implement endpoints for creating, managing, and deleting entities such as:
+  - organization
+  - org_group
+  - business_unit
+  - subfunction
+  - faculties
+- Validate input data before inserting into the database.
+- Handle errors gracefully and return appropriate HTTP status codes.
 
-### `npm test`
+### 6. *Token-Based Security for API Requests*
+- Extract JWT tokens from request headers.
+- Decode and verify JWTs before processing requests.
+- Enforce expiration and refresh mechanisms.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 7. *CORS Configuration*
+- Allow requests from frontend applications running on http://localhost:3000, http://localhost:3001, http://localhost:3002, and http://localhost:3003.
+- Define allowed methods (GET, POST, PUT, DELETE, OPTIONS).
+- Allow necessary headers, including Authorization and Content-Type.
 
-### `npm run build`
+### 8. *Error Handling and Logging*
+- Implement try-except blocks to catch and log database errors.
+- Return structured JSON responses for errors and success messages.
+- Log authentication failures and invalid token attempts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 9. *Testing and Debugging*
+- Enable debugging mode for local development.
+- Test endpoints using tools like *Postman* or *cURL*.
+- Perform unit testing for database interactions and authentication.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 10. *Deployment Considerations*
+- Use environment variables for sensitive configurations (e.g., database credentials, JWT secret key).
+- Deploy using a WSGI server such as *Gunicorn* for production.
+- Implement HTTPS and secure headers for enhanced security.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Task 3- Employee Performance and Impact Assessment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Overview
+This task generates a synthetic dataset of employee work metrics and uses an advanced predictive model to assess performance scores, burnout risks, and impact scales. The results are analyzed and saved into an Excel file, along with visualizations.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
+- **Synthetic Data Generation**: Creates realistic employee data including working hours, overtime, sick leaves, projects completed, efficiency, and burnout risk.
+- **Categorization**: Employees are categorized into different work levels.
+- **Machine Learning Model**: Uses XGBoost to predict performance scores.
+- **Data Export**: Saves the processed data and summary statistics to an Excel file.
+- **Visualization**: Generates a scatter plot of working hours vs. performance scores.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependencies
+Ensure you have the following Python libraries installed:
+```sh
+pip install pandas numpy xgboost scikit-learn matplotlib seaborn xlsxwriter
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How It Works
+1. **Data Generation**: Creates a dataset of employees with computed efficiency and burnout risks.
+2. **Employee Categorization**: Classifies employees based on working hours.
+3. **Model Training & Prediction**: Uses XGBoost to predict performance scores.
+4. **Data Export**: Saves results and summaries to an Excel file.
+5. **Visualization**: Plots working hours against performance scores.
 
-## Learn More
+## Usage
+Run the script to execute all processes automatically:
+```sh
+python script.py
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Output
+- **Employee_Impact_Assessment.xlsx**: Contains raw data and summary statistics.
+- **Scatter Plot**: Visualizes working hours vs. performance scores.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
+This project was developed as part of an employee analytics initiative.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
