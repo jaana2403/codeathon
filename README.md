@@ -105,5 +105,6 @@ This project was developed as part of an employee analytics initiative.
 
 # Snapshots
 ![Screenshot 2025-02-17 025035](https://github.com/user-attachments/assets/e5083e42-ae83-421f-bfe0-d018f6a7c531)
+![Screenshot 2025-02-17 025301](https://github.com/user-attachments/assets/b05c44fd-8bfa-4413-bc66-2c5468dc87be)
 
 
