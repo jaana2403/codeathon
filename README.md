@@ -93,7 +93,7 @@ pip install pandas numpy xgboost scikit-learn matplotlib seaborn xlsxwriter
 ## Usage
 Run the script to execute all processes automatically:
 ```sh
-python script.py
+python impact ass.py
 ```
 
 ## Output
