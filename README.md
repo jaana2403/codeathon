@@ -108,6 +108,8 @@ This project was developed as part of an employee analytics initiative.
 ![Screenshot 2025-02-17 025301](https://github.com/user-attachments/assets/b05c44fd-8bfa-4413-bc66-2c5468dc87be)
 ![Screenshot 2025-02-17 025344](https://github.com/user-attachments/assets/880c5726-eb0c-415d-98c2-b5cdec8f2d2a)
 ![Screenshot 2025-02-17 025405](https://github.com/user-attachments/assets/9e865db7-c14a-49da-a858-75c4dc573c43)
+![WhatsApp Image 2025-02-19 at 13 22 41_14023aee](https://github.com/user-attachments/assets/255c12d6-450e-43d7-ae82-5423d5c01f09)
+![WhatsApp Image 2025-02-19 at 13 22 41_fcb925c2](https://github.com/user-attachments/assets/c9d3150b-d4e5-4e72-b277-64fc039d7e2f)
 ![WhatsApp Image 2025-02-16 at 17 23 53_7bbf13f8](https://github.com/user-attachments/assets/dd640013-5adf-4167-a4f8-090bf6bd204b)
 
 
