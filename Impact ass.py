@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, mean_absolute_error
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# [Previous generate_synthetic_data function remains the same]
+# Generation of synthetic data of 500 rows
 def generate_synthetic_data(num_employees=500):
     np.random.seed(42)
     random.seed(42)
@@ -42,7 +42,7 @@ def generate_synthetic_data(num_employees=500):
     
     return data
 
-# Add the missing categorize_employees function
+# Added categorize_employees function
 def categorize_employees(data):
     """
     Categorize employees based on their working hours into different levels
@@ -58,7 +58,7 @@ def categorize_employees(data):
     data['Category'] = np.select(conditions, categories, default='Unknown')
     return data
 
-# Add the missing train_predictive_model function
+# Added train_predictive_model function
 def train_predictive_model(data):
     """
     Train an XGBoost model to predict performance scores
@@ -84,7 +84,7 @@ def train_predictive_model(data):
     
     return model
 
-# [Previous generate_rto_analysis function remains the same]
+# Generates detailed rto analysis based on the data
 def generate_rto_analysis(data):
     """
     Generate detailed RTO analysis based on impact levels and various metrics
@@ -155,7 +155,7 @@ def generate_rto_analysis(data):
     
     return data, pd.DataFrame(rto_summary)
 
-# [Previous save_to_excel function remains the same]
+# Saved output in excel
 def save_to_excel(data, rto_summary, filename='Employee_Impact_Assessment.xlsx'):
     # Create a copy of data without RTO analysis for the assessment sheet
     assessment_data = data.drop(['Workload_Intensity', 'Risk_Factor', 'RTO_Analysis'], axis=1, errors='ignore')
